@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="more-directives.html" />
+    <Content Include="ng-repeat-accross-elements.html" />
+    <Content Include="ng-repeat-track-by-id.html" />
     <Content Include="ng-repeat-helper-variables.html" />
     <Content Include="ng-repeat-object.html" />
     <Content Include="Scripts\angular.min.js.map" />
