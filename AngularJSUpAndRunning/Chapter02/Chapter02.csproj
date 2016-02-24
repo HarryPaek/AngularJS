@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="more-directives.html" />
+    <Content Include="ng-repeat-object.html" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
