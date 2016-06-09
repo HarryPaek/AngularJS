@@ -18,8 +18,8 @@ app.directive('udaDirective', ['$http', '$templateCache', '$compile', function (
         restrict: 'EA',
 
         scope: {
-            myUDAdatum: "=udaAttr",
-            myUDAcallback: "&clickCallback"
+            myUDAdatum: "=udaattr",
+            myUDAcallback: "&clickcallback"
         },
 
         link: function (scope, element) {
