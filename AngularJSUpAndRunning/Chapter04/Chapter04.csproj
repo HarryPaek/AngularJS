@@ -59,6 +59,8 @@
   <ItemGroup>
     <Content Include="form-styling.html" />
     <Content Include="form-error-messages.html" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -70,13 +72,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="form-validation.html" />
+    <Content Include="Scripts\angular-mocks.js" />
     <Content Include="two-forms-databinding.html" />
     <Content Include="simple-form.html" />
     <Content Include="simple-ng-model-02.html" />
     <Content Include="simple-ng-model.html" />
-    <Content Include="Scripts\angular-mocks.js" />
-    <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\angular.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

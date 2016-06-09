@@ -1,0 +1,13 @@
+﻿<!DOCTYPE html>
+<html ng-app="templateUsageApp">
+<head>
+    <title>Ng Template Usage Examples</title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Apps/app.js"></script>
+</head>
+<body>
+    <div ng-controller="MainCtrl">
+        <div my-server-directive template="myDirectivesServerTemplate.html" mydata="mydata" mycallback="doServerSomething(id)"></div>
+    </div>
+</body>
+</html>

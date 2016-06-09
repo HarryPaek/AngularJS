@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html ng-app="templateUsageApp">
+<head>
+    <title>Ng Template Usage Examples</title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Apps/app.js"></script>
+    <script type="text/ng-template" id="myDirectivesCustomTemplate.html">
+        <ul>
+            <li ng-repeat="value in values">
+                <a ng-click="doSomething({id:value.id})">
+                    {{value.name}}
+                </a>
+            </li>
+        </ul>
+    </script>
+</head>
+<body>
+    <div ng-controller="MainCtrl">
+        <div my-directive template="myDirectivesCustomTemplate.html" mydata="mydata" mycallback="doSomething(id)"></div>
+    </div>
+</body>
+</html>

@@ -62,6 +62,8 @@
     <Content Include="ng-repeat-track-by-id.html" />
     <Content Include="ng-repeat-helper-variables.html" />
     <Content Include="ng-repeat-object.html" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -74,8 +76,6 @@
   <ItemGroup>
     <Content Include="ng-repeat-example-01.html" />
     <Content Include="Scripts\angular-mocks.js" />
-    <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\angular.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

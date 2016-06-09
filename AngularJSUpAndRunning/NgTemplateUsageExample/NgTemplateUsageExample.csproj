@@ -7,13 +7,13 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1560B249-2C80-4974-BAD4-639577A2337E}</ProjectGuid>
+    <ProjectGuid>{4BAA6F70-A999-49DA-9A1C-E2090CB8D4C9}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Chapter03</RootNamespace>
-    <AssemblyName>Chapter03</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>NgTemplateUsageExample</RootNamespace>
+    <AssemblyName>NgTemplateUsageExample</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -57,8 +57,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -69,15 +67,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Apps\Controllers\ListController.js" />
+    <Content Include="Apps\app.js" />
+    <Content Include="Apps\Templates\myDirectivesServerTemplate.html" />
+    <Content Include="ngServerTemplateUsage.html" />
+    <Content Include="ngTemplateUsageElement.html" />
+    <Content Include="ngTemplateUsage.html" />
     <Content Include="Scripts\angular-mocks.js" />
-    <Content Include="Tests\ListControllerSpec.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -91,9 +93,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>63046</DevelopmentServerPort>
+          <DevelopmentServerPort>50803</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63046/</IISUrl>
+          <IISUrl>http://localhost:50803/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
