@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html ng-app="udaAttributeApp">
+<head>
+    <title>Ng Template Usage Examples</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Apps/app.js"></script>
+</head>
+<body>
+    <div ng-controller="MainCtrl">
+        <div class="row">
+            <div ng-repeat="udaAttruibute in udaData">
+                <uda-directive udaAttr="udaAttruibute" clickCallback="doUDASomething()"></uda-directive>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
