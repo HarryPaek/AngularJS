@@ -57,6 +57,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Apps\appTest.js" />
+    <Content Include="Apps\appSample.js" />
+    <Content Include="Apps\Templates\udaDirectiveDateTemplate.html" />
+    <Content Include="Apps\Templates\udaDirectiveNumberTemplate.html" />
+    <Content Include="Content\ui-bootstrap-csp.css" />
+    <Content Include="ngRepeatTableUsageTest.html" />
+    <Content Include="ngSampleRepeatTableUsageTest.html" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.min.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html ng-app="udaAttributeApp">
+<head>
+    <title>Ng Template Usage Examples</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Apps/app.js"></script>
+</head>
+<body>
+    <div ng-controller="MainCtrl">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed shortMargin">
+                                        <tbody>
+                                            <tr ng-repeat="aData in udaData">
+                                                <uda-directive udaattr="aData" clickcallback="doUDASomething(id)"></uda-directive>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

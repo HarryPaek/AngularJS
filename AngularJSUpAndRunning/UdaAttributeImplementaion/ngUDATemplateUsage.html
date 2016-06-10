@@ -9,8 +9,10 @@
 <body>
     <div ng-controller="MainCtrl">
         <div class="row">
-            <div ng-repeat="udaAttruibute in udaData">
-                <uda-directive udaattr="udaAttruibute" clickcallback="doUDASomething(id)"></uda-directive>
+            <div class="table table-condensed shortMargin">
+                <div ng-repeat="udaAttruibute in udaData">
+                    <uda-directive udaattr="udaAttruibute" clickcallback="doUDASomething(id)"></uda-directive>
+                </div>
             </div>
         </div>
     </div>

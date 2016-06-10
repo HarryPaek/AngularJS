@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html ng-app="sampleApp">
+<head>
+    <title>Ng Template Usage Examples</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Apps/appSample.js"></script>
+</head>
+<body>
+    <div ng-controller="sampleCtrl">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed shortMargin">
+                                        <tr ng-repeat="sample in sampleData">
+                                            <td class="shortPadding">{{sample.definition.description}}:</td>
+                                            <td class="shortPadding">{{sample.value}}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

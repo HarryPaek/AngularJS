@@ -1,11 +1,11 @@
 ﻿'use strict';
 
-var app = angular.module('udaAttributeApp', ['ui.bootstrap'])
+var app = angular.module('testApp', [])
 
-app.controller('MainCtrl', ['$scope', function ($scope) {
-    $scope.udaData = [{ id: 1, name: 'One', value: 'One Value', required: true, definition: { name: 'One', description: 'One Description', type: 'TEXT' }  },
-                      { id: 2, name: 'Two', value: 'Two Value', required: false, definition: { name: 'Two', description: 'Two Description', type: 'TEXT' } },
-                      { id: 3, name: 'Three', value: 'Three Value', required: false, definition: { name: 'Three', description: 'Three Description', type: 'TEXT' } },
+app.controller('testCtrl', ['$scope', function ($scope) {
+    $scope.testData = [{ id: 1, name: 'One', value: 'One Value', required: true, definition: { name: 'One', description: 'One Description', type: 'TEXT' }  },
+                       { id: 2, name: 'Two', value: 'Two Value', required: false, definition: { name: 'Two', description: 'Two Description', type: 'TEXT' } },
+                       { id: 3, name: 'Three', value: 'Three Value', required: false, definition: { name: 'Three', description: 'Three Description', type: 'TEXT' } },
     ];
 
     $scope.doUDASomething = function (id) {
@@ -13,7 +13,7 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
     }
 }]);
 
-app.directive('udaDirective', ['$http', '$templateCache', '$compile', function ($http, $templateCache, $compile) {
+app.directive('testDirective', ['$http', '$templateCache', '$compile', function ($http, $templateCache, $compile) {
     return {
         restrict: 'EA',
 
